@@ -159,9 +159,3 @@ brew install openssl
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/usr/local/opt/openssl@3/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include -I/usr/local/opt/openssl@3/include"
 ```
-
-## Todo
- - Add pagination for products page (by 5 items per page)
- - Add search for products (by product title)
- - Add price filter (as range) 
- - Auto generate slug (in django admin)
