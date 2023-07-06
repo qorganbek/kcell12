@@ -18,21 +18,20 @@ from .models import (
 @admin.register(Address)
 class AddressAdmin(admin.ModelAdmin):
     list_display: List[str] = [
-        'address_line_1',
-        'address_line_2',
-        'city',
-        'zip_code',
-        'address_type',
+        "address_line_1",
+        "address_line_2",
+        "city",
+        "zip_code",
+        "address_type",
     ]
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('title',)}
+    prepopulated_fields = {"slug": ("title",)}
 
 
 admin.site.register(Order)
-# admin.site.register(Product)
 admin.site.register(Payment)
 admin.site.register(Category)
 admin.site.register(OrderItem)
